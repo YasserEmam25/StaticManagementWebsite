@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;  
+    scroll-behavior: smooth; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+
+header .header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    float: left;
+    object-fit: cover;
+    z-index: -2;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+
+header .hidden {
+    opacity: 0;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clear: float;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+header ul {
+    padding: 16px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header ul li {
+    margin: 0 8px;
+    font-size: 22px;
+    padding-right: 10px;
+    padding-left: 16px;
+    cursor: pointer;
+}
+
+#image-text {
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+}
+
+#image-text h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 80px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+#image-text h4{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -140px;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.available-on {
+    position: absolute;
+    top: 100vh;
+    height: 30vh;
+    width: 100%;
+    background-color: #000;
+    z-index: 0;
+}
+
+.available-on h2 {
+    margin-top:20px;
+    font-size: 30px;;
+}
+
+.platforms-list {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.platforms-list li {
+    width: 180px;
+    margin-top:50px;
+}
+
+.platforms-list img {
+    width: 100%;
+    height: 100%;
+}
+#pc {
+    width: 50px;
+}
+
+/* adjusting the sections */
+
+.section {
+    position: relative;
+}
+
+.section h1 {
+    font-size:70px;
+    color: #fff;
+}
+
+.section:nth-child(even){
+    margin-left: 20px;
+    margin-top:250px;
+    height: 100vh;
+}
+
+.section:nth-child(odd) {
+    height: 100vh;
+}
+
+/* gaming section */
+.games {
+    position: relative;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.games:nth-child(3) {
+    margin-top:200px;
+}
+
+.game {
+    color: #fff;
+    cursor: pointer;
+}
+
+.game .image {
+    position: relative;
+    height: 200px;
+    width: 350px;
+    color: rgba(255, 255, 255, 0);
+}
+
+.game img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.game .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.game .overlay:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.game .about {
+    position: absolute;
+    font-size:20px;
+    margin: 14px;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+.game .image:hover {
+    color: white;
+}
+
+.game .description {
+    background-color:rgb(21, 21, 21);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 0 0 6px 6px;
+}
+
+
+.game .description h4 {
+    font-weight: '200';
+    font-size: 24px;
+}
+
+/* follow us */
+
+#follow {
+    margin-top:950px;
+    margin-left: 30px;
+    height: 75vh;
+}
+
+#follow ul {
+    width: 90%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#follow li {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#follow li img {
+    width: 100%;
+    height: 100%;
+}
